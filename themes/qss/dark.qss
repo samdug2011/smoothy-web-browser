@@ -1,0 +1,129 @@
+QMainWindow {
+                        border: #434343;
+                        color: #ffffff;
+                        background-color: #000000;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    QMessageBox {
+                        color: #ffffff;
+                    }
+                    QWidget {
+                            color: #ffffff;
+                        background-color: #000000;
+                    }
+                    QTabWidget::tab-bar {
+                        background: #000000;
+                    }
+
+                    /* Style the tab using the tab sub-control. Note that
+                        it reads QTabBar _not_ QTabWidget */
+                    QTabBar::tab {
+                        background: #000000;
+                        min-width: 10ex;
+                        padding: 5px;
+                        color: #ffffff;
+                        border: 0px 1px solid #ffffff;
+                    }
+                    QTabBar::tab:hover {
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+                    QTabBar::tab:selected {
+                        background: #ffffff;
+                        border: 2px solid #434343;
+                        color: #000000;
+                        border-radius: 4px;
+                        padding: 5px;
+                    }
+                    QTabBar::tab:first:!selected {
+                        border-left: none;
+                    }
+
+                    QTabBar::tab:last:!selected {
+                        border-right: none;
+                    }
+
+                    QTabBar::scroller { /* the width of the scroll buttons */
+                        width: 40px;
+                    }
+
+                    QTabBar QToolButton { /* the scroll buttons are tool buttons */
+                        background: #000000;
+                    }
+
+                    QToolBar {
+                        background: #000000;
+                        spacing: 3px;
+                        border: 1px solid #434343;
+                    }
+                    QAbstractButton {
+                        background-color: #000000;
+                        color: #ffffff;
+                        padding: 5px;
+                    }
+                    QAbstractButton:hover {
+                        background: #ffffff;
+                        color: #000000;
+                    }                                                             
+                    QToolTip {
+                        border: 1px solid #434343;
+                        border-radius: 5px;
+                        color: #ffffff;
+                        background-color: #000000;
+                    }
+                    QLineEdit {
+                        border: none;
+                        background: #000000;
+                        color: #ffffff;
+                    }
+                    QStatusBar {
+                        background: #000000;
+                        color: #ffffff;
+                        border: 2px solid #434343;
+                    }
+                    QLabel {
+                        color: #ffffff;
+                    }
+                    QProgressBar {
+                        border: 2px solid #434343;
+                        border-radius: 5px;
+                        color: #ffffff;
+                        text-align: center;
+                        /*height: 0.1px;*/
+                        background-color: #000000;
+                    }
+
+                    QProgressBar::chunk {
+                        background-color: #ffffff;
+                        width: 20px;
+                    }
+                    QMenu {
+                        background-color: #000000; /* sets background of the menu */
+                        border: 1px solid #434343;
+                        color: #ffffff;
+                    }
+
+                    QMenu::item {
+                        /* sets background of menu item. set this to something non-transparent
+                            if you want menu color and menu item color to be different */
+                        background-color: #000000;
+                    }
+
+                    QMenu::item:selected { /* when user selects item using mouse or keyboard */
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+                    QDockWidget {
+                        background-color: #000000;
+                        border: 1px solid #434343;
+                        color: #ffffff;
+                    }
+                    QListWidget, QListView{
+                        background-color: #000000;
+                        color: #ffffff;
+                    }
+                    QListWidget::item:hover, QListView::item:hover{
+                        background-color: #ffffff;
+                        color: #000000;
+                    }

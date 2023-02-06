@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Tab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<link rel="icon" type="image/png" href="../icon.png"/>
+<meta content="utf-8" http-equiv="encoding">
+<meta name="google" value="notranslate">
+<style>
+.myInput {
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+}
+.myInput:focus {outline: none;}
+.myBnt {
+    text-indent: -99999px;
+    padding-right: 5px;
+    background-image: url('search.png');
+    background-position: 10px 8px;
+    background-repeat: no-repeat;
+    left: 71.5%;
+    background-color: #000000;
+}
+.myBnt:focus {
+    background-color: rgb(122, 122, 122);
+    outline: 3px solid #ddd;
+}
+.search {
+    border-radius: 25px;
+    border: 2px solid #000000;
+    width: 60%;
+    display: inline-block;
+    padding: 4px 4px 4px 4px;
+}
+.search:hover {box-shadow: 0 2px 4px 0 rgba(255,0,0,0.24);}
+p {
+    text-align:center;
+}
+img {
+    width: 200px;
+}
+</style>
+<meta content="utf-8" http-equiv="encoding">
+</head>
+<body>
+<form method="get" action="https://duckduckgo.com/" style="text-align:center; margin-top: 30vh; transform: translateY(-50%);" name="searchform">
+<p>
+<img src="../icon.png" />
+</p>
+<div class="search">
+<input type="search" name="q" autocomplete="off" class="myInput" style="width: 90%;border: none;height: 0;">
+<input type="submit" value="Rechercher" alt="Lancer la recherche!" class="myBnt myInput">
+</div>
+</form>
+</body>
+</html>

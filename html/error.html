@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error!!!</title>
+</head>
+<body>
+    <div>
+        <p id="error"></p>
+    </div>
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const url = urlParams.get('url');
+        const error = urlParams.get('error');
+        document.getElementById('error').innerText = error;
+    </script>    
+</body>
+</html>
