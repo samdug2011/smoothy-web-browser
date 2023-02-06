@@ -467,9 +467,12 @@ class BookMarkToolBar(QToolBar):
         self.setFixedHeight(36)
         self.setMovable(False)
         self.actionTriggered.connect(self.onActionTriggered)
-        with open("bookmarks.json", "r") as file:
-            self.bookmark_list = json.load(file)
-            self.setBookMarks(self.bookmark_list)
+        if os.path.exists("bookmarks.json")
+            with open("bookmarks.json", "r") as file:
+                self.bookmark_list = json.load(file)
+        else:
+            self.bookmark_list = []
+        self.setBookMarks(self.bookmark_list)
 
     def setBookMarks(self, bookmarks):
         for bookmark in bookmarks:
