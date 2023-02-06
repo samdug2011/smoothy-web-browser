@@ -1,1 +1,3 @@
-# smoothy-web-browser
+# Smoothy
+
+Smoothy is a web browser created using PyQt.
